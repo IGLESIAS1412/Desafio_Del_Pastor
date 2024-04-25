@@ -16,7 +16,7 @@ map = generateMap(mapWidth, mapHeight);
 
 let countdown = 35; // Variable para almacenar el tiempo restante
 let countdownInterval; // Variable para almacenar el intervalo del temporizador
-startCountdown();
+startCountdown();// inicia la cuenta atras
 
 // Function to generate a random number within a range
 function getRandomNumber(min, max) {
