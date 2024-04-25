@@ -1,0 +1,192 @@
+body{
+
+    background-image:url("https://img.freepik.com/premium-photo/minecraft-block-texture_816702-1101.jpg");
+    background-repeat: repeat;
+}
+#title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+#Juego{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.Reglas{
+    width: 33%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 20px;
+    height: 600px;
+    
+}
+.Reglas>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Reglas>div>p{
+   font-size: 19px;
+
+}
+
+.Reglas>div>div>img{
+    width: 10%;
+}
+.Datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 20px;
+    height: 600px;
+
+}
+#Timer{
+    font-style: bold;
+    font-size:  60px;
+    text-align: center;
+}
+#puntos{
+    background-color: #4572d9;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+#pTotal{
+    font-size: 50%;
+}
+#mapContainer {
+    display: grid;
+    grid-template-columns: repeat(21, 40px);
+    grid-template-rows: repeat(21, 40px);
+    border: 10px solid white;
+    background-color: greenyellow;
+
+    padding: 10px;
+    border-radius: 5%;
+    background-image: url("https://i.pinimg.com/736x/07/bf/8a/07bf8a92b22866fde5a2ac2f289e4140.jpg");
+
+    
+   
+    
+}
+
+#mapContainer .cell {
+    width: 100%;
+
+    
+}
+
+#mapContainer .obstacle {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEWAXjZmTy94WDZJOCREMyFTQChPPCddRipnUC84Kx1CMSCDYDdGNiN0VzNuUzJ5WjRpTS5WQCdoTTBhSy1xUzNkSS5YRClUPid1VjVaRis3Kh13WTQ9Lh4tJBp3VzZsUjJ1WL+6AAAFKklEQVR4nO2dYVfyOBCFW6RSgba8gAiLa///v9wV9mDvSK6TnFCVvY8fOJymSZ6WDxk70xQFUCbSFWG6yZAWzmvIeclsYAhzUIYylKEMZShDGcpQhjL8CYZ40FAPcRsuqOFibEMEpjaZAftJmD72J3CVHvrck2MTGcpQhjKUoQxlKEMZyvBbDOufbEgiFL9hmcnwy8scgNmv4DptyegYdU1IS4MMZShDGcpQhjKUoQxl+BMMcTLFgvDv2v99/X/6i8Fv2JDRMbTp2EQRnGzx4GX58JgF6JQdi8D0At+KOWE6ZJ46vJ8lG57Nk3VaTN2MYOifjH9qMpShDGUoQxnKUIZ3YcjWe8jyYZmfYZ8PuPhk3+zUCEUHbBJpujA9tGzhWEv6PDxWA3ZbNzg8xo6L1JiX5bU10PJIjgH1ZihYzUjMaaC5cjcwLFg2IjEskw2ZoAxlKEMZylCGMpThPRiadSk+jchjCOvS2xiadWkL4Bi7IdW22QeZdMcBzHA/bNlNwl3u9xAwtL0bVGK/yxouYvWW+DNBw9Z/L4B9YJJfEmHInpnJUIYylKEMZShDGcrw2wxLEHx0G779LEPywKFrAByRxUvMsCZBQQkZYSvohc2T4p6nraDxn9cGLu5nMCLc3KJWnzK24VqG2ZFhCBnKcDxkGEKGMhyP32roL2Mwhu7zGm+xxifDLBQzN3+AiPMqL1hv8eIfglGwlDBS/kDTzGw+nDtzb542As9rYyOmpgoiEYapQ7BOZShDGcpQhjKUoQzvwtC/LmWY2ogh8ykbAohZipJ1qTFcZeEFyqcrSKZa98HT+vWzlzUbHkc4ABHxIWMGUdBmGBGWrJLevFWA4Z5LYerx84TR1nDIkZwYYeifTcRbI9zIMIgMZXgVGaYgwyAylOFVZJjCCIYRmT/GsMkCVkNgwcMEUpSOcN6+DdOvh2zxSRSbTImGZRYwfmB3JvVZ2wwMO7qZCpDL0P3by5MD1vmnJkMnMpThNWToRIZOZCjDa8jQya8xTF+XmhjBDZ4HggXrhu3uUWPL50Fo8bzCios+0P07xhAhF99QEPz3CUmtpzHIUIYylKEMZShDGcrwtxsuvj7dYbho47bDuGTe5DLEfBpclq/dtOQlsJtDUmXEYbMKDhc+8hkc3eS1+csY5q9hTM6bO6+NkprlZnIT/Sl/t8hNpKRmKspQhjKUoQxlKEMZ3oUhrOGwG7YuNQOaleENDCOqTXAfjgJKI3ZYr70jYEvcvO4FjlUEs5Mea/oC/CHgRDPVW7SkwqKpT/sonrdSPDe4fDuA4a6+HMCP2kbHEbshslA9AozqO3IMqHfGMNwU95KPyFSUoQxlKEMZylCGMpThBcwDchuWu2HgsaxGMPz0Btej72WuDdRbMEN4B22LmV0HfCMtGuLeFxFvncVLg+liFcREVJEs580eJdhyEib5zcHmbuNXvNwYoMW8kTdsiClwLMdvmyhYy1CGMpShDGUoQxn+vwxxf4sqUXB0Q74uhXypfvR7COGDibrcyWM8zsJ/+Zu0szCb1B0ecfAGQhuc6W2eVPh/GFkMiyO0bOm9yMP3Go7xfwsZyvCMDD+QYX5kKMMzMvxgdMMF3Yo70ZC9NepbVm3vC+768jnI6LnFPWxOY/2XKnS6h5edst/SDRNfz/s4n7+e/s4fCDadfrSbv7LhTGXGFPp8+hsg1R5mDPouaARz11gmHbbEJL+IPD7MDfzracArzdwDRjDElnkMn2QoQxnKUIYylKEMZXhfhv8AFYU9A0GCmf8AAAAASUVORK5CYII=");
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-size: 40px; /* Tamaño del emoticono */
+    background-position: center; /* Centrar el emoticono en el fondo */
+
+}
+
+
+#mapContainer .exit{
+    background-image: url("https://www.banderasphonline.com/wp-content/uploads/2020/08/donde-comprar-bandera-meta-para-exterior-1200x900.png");
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-size: 40px; /* Tamaño del emoticono */
+    background-position: center; /* Centrar el emoticono en el fondo */
+}
+#mapContainer .player{
+   
+    background-image: url("https://cdn-icons-png.flaticon.com/128/8081/8081805.png");
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-size: 40px; /* Tamaño del emoticono */
+    animation: animacion-personaje 0.5s infinite steps(2); /* Animación con dos pasos alternando */
+}
+
+#mapContainer .minotaur{
+    
+    background-image: url("https://cdn-icons-png.flaticon.com/512/826/826382.png");
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-size: 40px; /* Tamaño del emoticono */
+    background-position: center; /* Centrar el emoticono en el fondo */
+    transition: top 0.2s, left 0.2s;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#estadoModal {
+    
+    display: none; 
+    position: fixed;
+     z-index: 1; 
+     left: 0; 
+     top: 0; 
+     width: 100%; 
+     height: 100%; 
+     overflow: auto; 
+     background-color: rgba(0,0,0,0.4)
+}
+
+#estadoModal > div {
+    background-color: 	#4572d9;
+    margin: 15% auto;
+    padding: 20px; 
+    border: 5px solid white; 
+    width: 20%;
+    height: 40%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#mensajeEstado {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:  40px;
+    white-space: pre-line;
+}
+
+#reiniciarJuego {
+    background-color: #4572d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reiniciarJuego:hover {
+    background-color: #4585d9; /* Cambia el color cuando el mouse está encima */
+}

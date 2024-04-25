@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Map with Obstacles</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="title"> EL DESAFIO DEL PASTOR</h1>
+    </div>
+    <div id="Juego">
+        <div class="Reglas">
+            <div>
+                <h2>¡Bienvenido al desafío del pastor!</h2>
+                <p>¡Prepárate para una emocionante aventura donde tu misión es guiar al pastor hacia la línea de meta sin ser atrapado por los astutos minotauros o quedarte sin tiempo!</p>
+                <p>¡Tu destreza determinará tu puntuación! Completa el desafío para acumular puntos; ¡pero cuidado! Si no completas el mapa, ¡tu puntuación se mantendrá en cero!</p>
+                <p>¡Cada vez que logres llegar a la meta, enfrentarás un nuevo mapa con más desafíos y más minotauros acechando!</p>
+                <p>¡Prepárate para la acción y busca alcanzar la puntuación más alta en este emocionante juego!</p>
+            </div>
+            <div>
+                <h2>CONTROLES</h2>
+                Para mover  el personaje usa:
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/31/31504.png" alt="">
+    
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/31/31261.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/31/31038.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/30/30860.png" alt="">
+    
+                </div>
+
+            </div>
+
+            
+            
+        </div>
+        <div id="mapContainer">
+            <!-- Aquí se dibujará el laberinto -->
+        </div>
+        <div class="Datos">
+            <div id="Timer">
+                Tiempo restante... 35 s
+            </div>
+            <div id="puntos">
+                <div id="p">Puntuacion: 0</div>
+                <div id="pTotal">Puntuacion Total: 0</div>
+            </div>
+        </div>
+
+        <!-- Cuadro emergente para mostrar el estado del juego -->
+        <div id="estadoModal" >
+            <div>
+                <p id="mensajeEstado"></p>
+                <button id="reiniciarJuego">Reiniciar Juego</button>
+            </div>
+        </div>
+    </div>  
+<script src="script.js"></script>
+</body>
+</html>
