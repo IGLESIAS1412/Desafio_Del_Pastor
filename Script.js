@@ -77,15 +77,6 @@ function generateMap(rows, cols) {
             
         }
     }
-    map[0][0] = 0;
-    map[0][1] = 0;
-    map[1][0] = 0;
-    map[1][1] = 0;   
-    map[rows - 1][cols - 1] = 0;
-    map[rows - 1][cols - 2] = 0;
-    map[rows - 2][cols - 1] = 0;
-    map[rows - 2][cols - 2] = 0;
-
     // Place empty 3x3 surrounded by obstacles
     const emptyRow = Math.floor(rows / 2);
     const emptyCol = Math.floor(cols / 2);
